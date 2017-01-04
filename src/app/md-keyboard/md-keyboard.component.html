@@ -1,0 +1,51 @@
+<div class="md-keyboard-container" [ngClass]="{active: keyboard.visible | async}">
+    <div *ngFor="let row of layout.keys" layout="row">
+        <div flex *ngFor="let key of row" [ngSwitch]="key[0]" [ngClass]="getKeyClass(key)">
+            <span *ngSwitchCase="Bksp">
+                <button md-raised-button class="md-raised key-bksp"
+                        tabindex="-1"
+                        (click)="pressed(key[0])">
+                    <md-icon>keyboard_backspace</md-icon>
+                </button>
+            </span>
+            <span *ngSwitchCase="Tab">
+                <button md-raised-button class="md-raised key-tab"
+                        tabindex="-1"
+                        (click)="pressed(key[0])">
+                    <md-icon>keyboard_tab</md-icon>
+                </button>
+            </span>
+            <span *ngSwitchCase="Caps">
+                <button md-raised-button class="md-raised key-caps"
+                        ng-class="{'locked': capsLocked, 'md-focused': capsLocked}"
+                        tabindex="-1"
+                        (click)="pressed(key[0])">
+                    <md-icon>keyboard_capslock</md-icon>
+                </button>
+            </span>
+            <span *ngSwitchCase="Enter">
+                <button md-raised-button class="md-raised key-enter"
+                        tabindex="-1"
+                        (click)="pressed(key[0])">
+                    <md-icon>keyboard_return</md-icon>
+                </button>
+            </span>
+            <span *ngSwitchCase="Shift">
+                <button md-raised-button class="md-raised key-shift"
+                        tabindex="-1"
+                        (click)="pressed(key[0])">
+                    {{key[0]}}
+                </button>
+            </span>
+            <span *ngSwitchCase="Spacer"></span>
+            <span ng-switch-default>
+                <button md-raised-button class="md-raised key-char"
+                        tabindex="-1"
+                        (click)="pressed(key[!capsLocked && !caps ? 0 : 1] || key[0])">
+                    {{key[!capsLocked && !caps ? 0 : 1] || key[0]}}
+                </button>
+            </span>
+        </div>
+    </div>
+
+</div>
