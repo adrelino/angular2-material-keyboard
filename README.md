@@ -1,31 +1,41 @@
-# Angular2MaterialKeyboard
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+# Learn how to create an Angular 2 Library
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+An example repository for learning how to build your own Angular 2 library. Learn how to:
 
-## Code scaffolding
+- setup the library public API
+- build the library
+- version it
+- publish it to npm
+- package the CSS
+- consume the library with SystemJs or Webpack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+See further details in this blog post: 
+[How to create an Angular 2 component library, and how to consume it using SystemJs or Webpack ](http://blog.jhades.org/how-to-create-an-angular-2-library-and-how-to-consume-it-jspm-vs-webpack/)
 
-## Build
+# Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Clone the repository and do:
 
-## Running unit tests
+    npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Building the library
 
-## Running end-to-end tests
+    npm run build
+    
+## Install the SystemJs Example 
+    
+    cd examples/systemjs
+    npm install
+    npm run build
+    npm start
+    
+Then access [http://localhost:8080](http://localhost:8080)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Install the Webpack Example 
+    
+    cd examples/webpack
+    npm install
+    npm start
+    
+Then access [http://localhost:8080](http://localhost:8080)
