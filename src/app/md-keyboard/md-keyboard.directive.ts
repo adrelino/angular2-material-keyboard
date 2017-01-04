@@ -2,7 +2,6 @@ import {
     Directive, Input, Output, ViewContainerRef, EventEmitter, Compiler, HostListener, ReflectiveInjector
 } from '@angular/core';
 import { MdKeyboardService } from "./md-keyboard.service";
-import { debug } from "util";
 
 @Directive({
     selector: '[mdKeyboard]'
