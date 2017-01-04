@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/jhades/ng2-webpack-minimal#readme",
   "devDependencies": {
-    "typescript": "^2.1.4",
+    "typescript": "^2.2.0-dev.20170104",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
@@ -43,6 +43,6 @@
     "angular2-library-example": "^1.0.6",
     "es6-promise": "^3.0.2",
     "reflect-metadata": "0.1.2",
-    "ts-loader": "^0.8.2"
+    "ts-loader": "^0.9.3"
   }
 }
