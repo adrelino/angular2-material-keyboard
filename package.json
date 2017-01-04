@@ -1,8 +1,9 @@
 {
   "name": "angular2-material-keyboard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "angular-cli": {},
+    "main": "dist/index.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
