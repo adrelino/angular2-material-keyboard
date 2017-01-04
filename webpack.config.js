@@ -3,7 +3,10 @@ var path = require('path');
 module.exports = {
   entry: "./src/app.ts",
   output: {
-    filename: "bundle.js"
+    filename: "index.js",
+    umdNamedDefine: true,
+    library: 'angular2-material-keyboard',
+    libraryTarget: 'umd'
   },
   devtool: 'source-map',
 

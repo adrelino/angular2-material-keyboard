@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("angular2-material-keyboard", [], factory);
+	else if(typeof exports === 'object')
+		exports["angular2-material-keyboard"] = factory();
+	else
+		root["angular2-material-keyboard"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -63544,5 +63554,7 @@
 
 
 /***/ }
-/******/ ]);
-//# sourceMappingURL=bundle.js.map
+/******/ ])
+});
+;
+//# sourceMappingURL=index.js.map
