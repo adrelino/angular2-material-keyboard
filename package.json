@@ -3,7 +3,8 @@
   "version": "0.1.2",
   "description": "Angular2 Material Keyboard",
   "scripts": {
-    "start": "webpack-dev-server --colors --display-error-details --content-base src"
+    "start": "webpack-dev-server --colors --display-error-details --content-base src",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
